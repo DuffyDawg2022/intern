@@ -1,0 +1,102 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>University Website Design - Easy Tutorials</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Our Courses</h1>
+    </section>
+    
+    
+<!---------- course ----------->
+    
+    <section class="course">
+        <h1>Courses We Offer</h1>
+
+<BR>
+            <div class="row">
+            <div class="course-col">
+                <h3>Data Science</h3>
+                <p>Learn how machines make decisions using data — from predictions to automation.
+
+Work on real ML models like recommendation systems, chatbots, and classifiers.
+
+Perfect for those who love logic, math, and creating intelligent systems.</p>
+            </div>
+            <div class="course-col">
+                <h3>Machine Learning</h3>
+                <p>Learn how machines make decisions using data — from predictions to automation.
+
+Work on real ML models like recommendation systems, chatbots, and classifiers.
+
+Perfect for those who love logic, math, and creating intelligent systems</p>
+            </div>
+            <div class="course-col">
+                <h3>Web Development</h3>
+                <p>Build complete websites and web apps from scratch using HTML, CSS, JavaScript, and frameworks.
+
+Learn both Frontend (UI) and Backend (Servers & Databases) with real-world projects.
+
+Ideal if you enjoy designing, creating, and bringing ideas to life on the internet.</p>
+            </div>
+        </div>
+    </section>
+    
+<!---------- Facilities ---------->
+    
+    <section class="facility">
+        <h1>What Will You Gain After This Course</h1>
+
+            <div class="row">
+                <div class="facility-col">
+                    <img src="./images/gg.jpg">
+                    <h3>Certificate of Completion & Letter of Recommendation (LOR) to boost your resume and credibility.</h3>
+                        
+                </div>
+                <div class="facility-col">
+                    <img src="./images/hh.jpeg">
+                    <h3>Hands-on Project Experience that you can showcase in your portfolio or during interviews.</h3>
+                </div>
+                <div class="facility-col">
+                    <img src="images/cafeteria.png">
+                    <h3>Industry-Relevant Skills & Practical Knowledge that prepare you for real-world job roles or freelancing opportunities.</h3>
+                </div>
+            </div>
+    </section>
+    
+
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>  
+    
+</body>
+</html>    
